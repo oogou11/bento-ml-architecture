@@ -19,7 +19,8 @@ BentoML's architecture is composed of several key components that work together 
    - BentoML provides a unified system to manage models and their versions. This component ensures that different versions of models can coexist and that the correct version is used in production. BentoML handles model packaging and storing models in a standardized format that is easily deployable.
 
 3. **BentoML API Server**:
-   - The BentoML API Server serves model prediction APIs, making them available over HTTP or gRPC. The server is highly extensible and integrates seamlessly with containerization tools like Docker and Kubernetes, allowing for easy scaling.
+   - The BentoML API Server serves model prediction APIs, making them available over HTTP or gRPC. The server is highly extensible and integrates seamlessly with containerization tools like Docker and Kubernetes, allowing for easy scaling. 
+   ![alt text](images/adaptive_batching.png)
 
 4. **Model Artifact Store**:
    - BentoML allows you to store machine learning artifacts, such as models, preprocessing code, and configuration files, in a variety of backend stores (e.g., file systems, cloud storage, or databases). This allows teams to efficiently manage their assets and streamline collaboration.
