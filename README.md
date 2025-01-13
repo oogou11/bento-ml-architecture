@@ -10,17 +10,12 @@ Below is an analysis of the key mechanisms and modules within BentoML:
 - **Advantages**:  
   - Modular design improves code maintainability and scalability.  
   - Simplifies unit testing by allowing easy replacement of dependencies for different environments.  
-
-
 ### 2. Adaptive Batching  
 - BentoML provides an adaptive batching mechanism to aggregate multiple prediction requests and process them in a single batch, improving concurrency and performance.  
-
-![image](images/api_adaptive_batching.png)
 - **Key Features**:  
   - **Dynamic Adjustment**: Dynamically adjusts batch size and latency based on traffic, balancing throughput and latency.  
 
-
-
+![image](images/api_adaptive_batching.png)  
 ### 3. RPC Communication Mechanism  
 - BentoML employs an efficient RPC (Remote Procedure Call) mechanism to manage communication between services in distributed deployments.  
 - **Features**:  
